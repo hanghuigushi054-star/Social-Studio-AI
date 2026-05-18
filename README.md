@@ -1,20 +1,20 @@
-<div align="center">
-<img width="1200" height="475" alt="GHBanner" src="https://github.com/user-attachments/assets/0aa67016-6eaf-458a-adb2-6e31a0763ed6" />
-</div>
-
-# Run and deploy your AI Studio app
-
-This contains everything you need to run your app locally.
-
-View your app in AI Studio: https://ai.studio/apps/8a426a43-27cd-4a45-a353-9eb54d54c3b4
-
-## Run Locally
-
-**Prerequisites:**  Node.js
-
-
-1. Install dependencies:
-   `npm install`
-2. Set the `GEMINI_API_KEY` in [.env.local](.env.local) to your Gemini API key
-3. Run the app:
-   `npm run dev`
+# 主な機能 (Features)
+AI コンテンツ自動生成: プラットフォーム（Instagram、TikTok、Xなど）と短いメモを指定するだけで、最適なトーン＆マナーで投稿コンテンツを作成します。
+ * **スプレッドシート用一括コピー機能:** 作成したテキストとハッシュタグをタブ区切りでクリップボードに保存。Google スプレッドシートや Excel のセルへ直接・綺麗に貼り付け（ペースト）できます。
+ * **ビジュアル素材の自動生成:** 投稿に最適な画像を生成するための「英語の画像生成用プロンプト」を自動で考案し、さらにその場でアプリ内からAI画像を生成できます。
+ * **休日投稿エンジン (Holiday Engine):** ハロウィン、クリスマス、母の日など、よくある季節ごとのイベント向けのテンプレートアイデアから即座にコンテンツ案を作成できます。
+ * **ブルー基調の洗練されたUI:** 集中力を高め、プロフェッショナルさをもたらす爽やかなブルーの色合い（カラーパレット）で統一されています。
+   # 技術スタック (Tech Stack)
+ * **フロントエンドフレームワーク:** React 19 + TypeScript
+ * **ビルドツール：** 素早く
+ * **スタイリング & UI:** Tailwind CSS v4, Lucide React (アイコン), Motion (アニメーション)
+ * **AI モデル (API):** Google Gemini API (@google/genes SDK を使用)
+ * **テキスト・プロンプト生成:** ジェミニ3フラッシュプレビュー
+ * **画像生成:** ジェミニ2.5フラッシュイメージ
+# 使い方 (Usage)
+1. **プラットフォームを選択:** 画面左側のドロップダウンから対象のSNS（Instagram、TikTokなど）を選択します。
+2. **メモ・概要を入力:** 「キャンペーン概要 / 休日 / メモ」のテキストボックスに、伝えたい内容をざっくりと入力します。（例: 「新商品のサマーコレクション発売。海に行きたくなるようなポップな文章で」）
+3. **コンテンツを生成:**「コンテンツを生成」ボタンをクリックします。
+4. **結果の保存と画像作成:**
+ * **スプレッドシート用にコピー:** 緑色のコピーボタンを押すと、コンテンツとハッシュタグが綺麗にコピーされ、管理用シートにそのまま貼り付けられます。
+ * **画像生成:** ビジュアル素材カードの「AI画像生成」ボタンを押すと、投稿内容にマッチしたオリジナル画像が生成されます。
